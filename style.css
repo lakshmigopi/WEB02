@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#main{
+    background-image: url(images/image9large.jpg);
+    background-size: cover;
+    background-position:center;
+    position: relative;
+z-index: 1;
+}
+#main::after{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color:wheat;
+    opacity: 0.7;
+    z-index: -1;
+}
+#main h1{
+    display: block;
+    width: fit-content;
+    font-size: 2rem;
+    position: relative;
+    color: brown;
+}
+
+.btn1{
+    display: inline-block;
+    padding: 10px 30px;
+    color: firebrick;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid firebrick;
+}
+
+.btn1:hover{
+    background-color: firebrick;
+    color: wheat;
+}
+
+.nav-wrapper{
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Montserrat,sans-serif;
+    color: firebrick;
+    font-weight: bolder;
+}
+.leftside{
+    display: flex;
+}
+.nav-link-wrapper{
+margin-left: 30px;
+margin-right: 40px;
+}
+
+.nav-link-wrapper a{
+    text-decoration: none;
+    color: firebrick;
+    
+}
+
+
+.nav-link-wrapper a:hover{
+    text-decoration: none;
+    background-color: firebrick;
+    color: white;
+    
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.rowimg{
+height: 500px;
+width: 465px;
+}
